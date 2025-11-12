@@ -1,6 +1,7 @@
-import { Dialog, DialogContent } from "@/components/ui/dialog";
+import { Dialog, DialogContent, DialogDescription } from "@/components/ui/dialog";
 import { X } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { VisuallyHidden } from "@radix-ui/react-visually-hidden";
 
 interface ImagePopupProps {
   open: boolean;
@@ -13,6 +14,9 @@ export default function ImagePopup({ open, onClose, image, alt }: ImagePopupProp
   return (
     <Dialog open={open} onOpenChange={onClose}>
       <DialogContent className="max-w-4xl p-0 overflow-hidden" data-testid="dialog-image">
+        <VisuallyHidden>
+          <DialogDescription>Full size image preview</DialogDescription>
+        </VisuallyHidden>
         <div className="relative">
           <Button
             variant="ghost"

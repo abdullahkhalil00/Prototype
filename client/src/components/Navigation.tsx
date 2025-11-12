@@ -1,8 +1,8 @@
-import { Link, useLocation } from "wouter";
+import { useLocation } from "wouter";
 import { Button } from "@/components/ui/button";
 
 export default function Navigation() {
-  const [location] = useLocation();
+  const [location, setLocation] = useLocation();
 
   const navItems = [
     { label: "Home", path: "/" },
@@ -16,22 +16,24 @@ export default function Navigation() {
     <nav className="sticky top-0 z-50 bg-card border-b border-card-border">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
-          <Link href="/">
-            <a className="text-xl font-bold text-primary" data-testid="link-logo">
-              AI Gallery
-            </a>
-          </Link>
+          <span 
+            className="text-xl font-bold text-primary cursor-pointer" 
+            data-testid="link-logo"
+            onClick={() => setLocation("/")}
+          >
+            AI Gallery
+          </span>
           <div className="flex items-center gap-2">
             {navItems.map((item) => (
-              <Link key={item.path} href={item.path}>
-                <Button
-                  variant={location === item.path ? "default" : "ghost"}
-                  size="sm"
-                  data-testid={`button-nav-${item.label.toLowerCase()}`}
-                >
-                  {item.label}
-                </Button>
-              </Link>
+              <Button
+                key={item.path}
+                variant={location === item.path ? "default" : "ghost"}
+                size="sm"
+                onClick={() => setLocation(item.path)}
+                data-testid={`button-nav-${item.label.toLowerCase()}`}
+              >
+                {item.label}
+              </Button>
             ))}
           </div>
         </div>
