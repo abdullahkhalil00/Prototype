@@ -1,0 +1,145 @@
+Build a **responsive website** called **AI Gallery** using **HTML, CSS, and JavaScript**. The site should have a clean, modern, and tech-style layout with teal or cyan accents, soft shadows, and rounded corners. The design must be mobile-friendly and interactive.
+
+---
+
+### **1. Navigation Bar**
+
+At the top, create a dark navigation bar with these buttons:
+**Home, Personal, Nature, ART, Character.**
+Make it sticky so it stays visible while scrolling.
+
+---
+
+### **2. Home Page**
+
+The home page layout includes:
+
+**Hero Section:**
+
+* Split into two halves:
+
+  * **Left side:** Show website title “AI Gallery” and a short description like “Explore AI-generated visuals across categories such as Personal, Nature, ART, and Character.”
+  * **Right side:** Display a sample image styled like a gallery card.
+
+**Search Bar:**
+
+* Below the hero, center a search bar with placeholder text: *“Search images, tools or prompts...”*
+
+**Category Preview Section:**
+
+* Show four main categories: Personal, Nature, ART, Character.
+* Each category has one **row of three cards**, randomly showing one subcategory per load:
+
+  * Personal → CV Style, Portfolio, DP
+  * Nature → Sunrise, Sunset, Mountain
+  * ART → Architecture, Illustrator, Sketch
+  * Character → Personal, Cartoon
+* Each card includes:
+
+  * An image (clickable to open popup)
+  * Tool name with a small arrow icon (indicating a link)
+  * A short image prompt
+  * Three buttons: **Copy**, **Download**, and **Edit**
+* Add a **“See More”** button at the end of each category row to open that category’s full page.
+
+**Visitor Counters:**
+
+* Below all categories, show *Daily Visitors* and *Current Visitors*.
+* The *Current Visitors* value should increase automatically on every page reload.
+
+---
+
+### **3. Category Pages (Personal, Nature, ART, Character)**
+
+Each category page includes:
+
+**Hero Section:**
+
+* Display live *Daily Visitors* and *Current Visitors* counters.
+
+**Secondary Navbar:**
+
+* Changes based on the selected main category:
+
+  * Personal: CV Style, Professional Graphic Portfolio, DP
+  * Nature: Sunrise, Sunset, Mountain
+  * ART: Architecture, Illustrator, Sketch
+  * Character: Personal, Cartoon
+
+**Main Layout:**
+
+* Two sections:
+
+  * **Left panel (Filter):**
+
+    * White filter box with checkboxes for Tools (Leonardo, Nano Banana, ChatGPT, Midjourney)
+    * Radio buttons for Free or Unpaid
+  * **Right panel (Gallery Grid):**
+
+    * Display cards, 3 per row
+    * Each card includes:
+
+      * Image
+      * Tool name with arrow icon
+      * Prompt text
+      * **Copy**, **Download**, and **Edit** buttons
+
+---
+
+### **4. Image Popup Feature**
+
+* When a user clicks on a card image, show a **popup window** displaying the full image.
+* Add a **close (X)** button in the top-right corner to close the popup.
+* Popup should dim the background and center the image.
+
+---
+
+### **5. Edit Popup Feature**
+
+* When a user clicks the **Edit** button on a card:
+
+  * Show a **popup window** divided into two sides:
+
+    * **Left side:** Show the selected image live.
+    * **Right side:** Include sliders for:
+
+      * Saturation
+      * Temperature
+      * Contrast
+      * Hue
+      * Lightness
+      * Color Model (dropdown)
+  * As users adjust values, changes apply to the image in **real time**.
+  * Below the image, display the **prompt** for that image.
+  * Whenever the user changes any setting, update the prompt automatically by appending the new parameter and value.
+
+**Example:**
+Original prompt:
+“A stylish man with dark, curly hair and a beard, wearing sunglasses, an olive green jacket over a black t-shirt, and light-colored pants, steps out of a white luxury car.”
+
+If the user changes saturation to 0.8, update the prompt to:
+“…luxury car. **Saturation = 0.8**”
+If they also adjust hue or contrast, append each new value to the end of the prompt.
+
+---
+
+### **6. Responsive Behavior**
+
+* On smaller screens:
+
+  * Hero section stacks vertically.
+  * Cards adjust to 1–2 per row.
+  * Popups resize properly and stay centered.
+
+---
+
+### **7. Functionality Summary**
+
+* Copy button: Copies the image prompt text.
+* Download button: Downloads the image.
+* Edit button: Opens editing popup with live adjustment controls.
+* Visitor counters: Update dynamically.
+* Random category previews reload with new cards each time.
+* All pages link back to the Home page.
+
+
