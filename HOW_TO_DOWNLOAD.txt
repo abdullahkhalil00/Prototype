@@ -1,0 +1,63 @@
+╔══════════════════════════════════════════════════════════╗
+║     AI GALLERY - DOWNLOAD INSTRUCTIONS                  ║
+║     (If tar.gz file shows 0 bytes when downloaded)      ║
+╔══════════════════════════════════════════════════════════╝
+
+
+🎯 RECOMMENDED METHOD: Use Replit's Menu
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+This is the most reliable way to download everything:
+
+1. Click the THREE DOTS (⋮) menu in the top-left corner
+2. Select "Download as zip"  
+3. This will download the entire project as a zip file
+4. Extract the zip on your computer
+5. Open terminal/command prompt in the extracted folder
+6. Run: npm install
+7. Run: npm run dev
+8. Open: http://localhost:5000
+
+✅ This method is proven to work and includes everything!
+
+
+🔧 ALTERNATIVE: Manual File Download
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Yes, downloading files individually WILL WORK, but you need to:
+
+Required files/folders to download:
+  ✓ attached_assets/ (entire folder with images)
+  ✓ client/ (entire folder with React code)
+  ✓ server/ (entire folder with backend)
+  ✓ shared/ (entire folder)
+  ✓ package.json
+  ✓ package-lock.json
+  ✓ tsconfig.json
+  ✓ vite.config.ts
+  ✓ tailwind.config.ts
+  ✓ postcss.config.js
+  ✓ components.json
+  ✓ drizzle.config.ts
+  ✓ design_guidelines.md
+
+⚠️ This is tedious (98 files total), so use Replit's menu instead!
+
+
+💡 FASTEST METHOD: Run Directly on Replit
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+The app is already running here on Replit!
+Just click the "Open in new tab" button to view it.
+
+No download needed! 🎉
+
+
+📋 After Download (Any Method):
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. Extract the downloaded files
+2. Open terminal in the project folder
+3. Run: npm install
+4. Run: npm run dev
+5. Open browser: http://localhost:5000
